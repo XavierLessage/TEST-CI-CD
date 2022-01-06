@@ -35,8 +35,8 @@ jobs:
         with:
           image: dsail/dsail-server
           tags: v1, latest
-          registry: hub.docker.com
-          dockerfile: Dockerfile.ci
+          registry: docker.io
+          dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
