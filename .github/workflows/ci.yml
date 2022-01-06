@@ -36,11 +36,10 @@ jobs:
           image: dsail/dsail-server
           tags: v1, latest
           registry: docker.io
-          dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-#        run: docker build . --file Dockerfile --tag dsail-server:$(date +%s)
+#        run: docker build . --file /Docker/Dockerfile --tag dsail-server:$(date +%s)
         run: docker images
      
