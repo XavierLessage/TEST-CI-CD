@@ -35,7 +35,7 @@ jobs:
         with:
           image: dsail/dsail-server
           tags: v1, latest
-          Dockerfile : /Docker/Dockerfile
+          Dockerfile : /home/runner/work/TEST-CI-CD/TEST-CI-CD/Docker/Dockerfile
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
