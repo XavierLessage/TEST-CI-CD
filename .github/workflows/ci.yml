@@ -40,6 +40,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-#        run: docker build . --file /Docker/Dockerfile --tag dsail-server:$(date +%s)
         run: docker images
+# run: docker build . --file /Docker/Dockerfile --tag dsail-server:$(date +%s)
+        
      
